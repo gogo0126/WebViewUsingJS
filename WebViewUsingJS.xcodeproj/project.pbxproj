@@ -12,6 +12,8 @@
 		AF903CD81C48CA2000E3FDF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF903CD61C48CA2000E3FDF9 /* Main.storyboard */; };
 		AF903CDA1C48CA2000E3FDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF903CD91C48CA2000E3FDF9 /* Assets.xcassets */; };
 		AF903CDD1C48CA2000E3FDF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF903CDB1C48CA2000E3FDF9 /* LaunchScreen.storyboard */; };
+		AF903CE51C48CAFA00E3FDF9 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AF903CE41C48CAFA00E3FDF9 /* index.html */; };
+		AF903CE71C48CFCC00E3FDF9 /* clickMe.html in Resources */ = {isa = PBXBuildFile; fileRef = AF903CE61C48CFCC00E3FDF9 /* clickMe.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AF903CD91C48CA2000E3FDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF903CDC1C48CA2000E3FDF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF903CDE1C48CA2000E3FDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF903CE41C48CAFA00E3FDF9 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		AF903CE61C48CFCC00E3FDF9 /* clickMe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = clickMe.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				AF903CD91C48CA2000E3FDF9 /* Assets.xcassets */,
 				AF903CDB1C48CA2000E3FDF9 /* LaunchScreen.storyboard */,
 				AF903CDE1C48CA2000E3FDF9 /* Info.plist */,
+				AF903CE41C48CAFA00E3FDF9 /* index.html */,
+				AF903CE61C48CFCC00E3FDF9 /* clickMe.html */,
 			);
 			path = WebViewUsingJS;
 			sourceTree = "<group>";
@@ -123,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF903CDD1C48CA2000E3FDF9 /* LaunchScreen.storyboard in Resources */,
+				AF903CE71C48CFCC00E3FDF9 /* clickMe.html in Resources */,
+				AF903CE51C48CAFA00E3FDF9 /* index.html in Resources */,
 				AF903CDA1C48CA2000E3FDF9 /* Assets.xcassets in Resources */,
 				AF903CD81C48CA2000E3FDF9 /* Main.storyboard in Resources */,
 			);

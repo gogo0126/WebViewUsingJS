@@ -8,11 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIWebViewDelegate {
 
+	@IBOutlet weak var webView: UIWebView!
+	var request:NSMutableURLRequest?
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+		let indexUrl = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("clickMe", ofType: "html")!)
+
+		self.request = NSMutableURLRequest(URL: indexUrl)
+
+		self.webView.loadRequest(self.request!)
+		self.webView.delegate = self
+
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -21,5 +31,17 @@ class ViewController: UIViewController {
 	}
 
 
+	func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+		let url = request.URL!
+		
+		if url.scheme == "devzeng" {
+			if url.host == "login" {
+				webView.stringByEvaluatingJavaScriptFromString("alert('呼叫成功')")
+				return false
+			}
+		}
+		
+		return true
+	}
 }
 
